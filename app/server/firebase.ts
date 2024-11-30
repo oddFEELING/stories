@@ -1,23 +1,22 @@
-// Import the functions you need from the SDKs you need
+// ~ =============================================>
+// ~ ======= Firebase configuration and initialization
+// ~ ==============================================>
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { GoogleAuthProvider } from "@firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// ~ ======= Firebase configuration using environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyDC3ZQ06TRU4ALthkrV9zXPPomLGCeitGI",
-  authDomain: "odd-space-stories.firebaseapp.com",
-  projectId: "odd-space-stories",
-  storageBucket: "odd-space-stories.firebasestorage.app",
-  messagingSenderId: "188593441660",
-  appId: "1:188593441660:web:39817c6828914b1b68f2f9",
-  measurementId: "G-QB4CTTBMTF",
+	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_FIREBASE_APP_ID,
+	measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
+// ~ ======= Initialize Firebase services
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const googleProvider = new GoogleAuthProvider();
