@@ -4,9 +4,125 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+	@apply bg-white;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+	@media (prefers-color-scheme: dark) {
+		color-scheme: dark;
+	}
+}
+
+@layer base {
+	:root {
+		--background: #f4f4f4; /* Light, vivid gray background */
+		--foreground: #2c2c2c; /* Deep neutral black-gray for text */
+		--card: #ffffff; /* Crisp white for cards */
+		--card-foreground: #3b3b3b; /* Bold dark gray for card text */
+		--popover: #f9f9f9; /* Slightly lighter gray */
+		--popover-foreground: #2c2c2c; /* Matches text */
+		--primary: #5a5a5a; /* Vivid neutral dark gray for primary elements */
+		--primary-foreground: #ffffff; /* White for contrast */
+		--secondary: #b3b3b3; /* Soft vivid mid-gray for secondary elements */
+		--secondary-foreground: #4a4a4a; /* Darker vivid gray for secondary text */
+		--muted: #e0e0e0; /* Pale muted gray */
+		--muted-foreground: #606060; /* Muted vivid darker gray for text */
+		--accent: #707070; /* Bold mid-gray for accents */
+		--accent-foreground: #ffffff; /* White for contrast */
+		--destructive: #a14f4f; /* Muted red-gray for destructive actions */
+		--destructive-foreground: #ffffff; /* White for contrast */
+		--border: #cccccc; /* Clean light gray border */
+
+		--input: #ededed; /* Light gray for input fields */
+		--ring: #5a5a5a; /* Strong dark gray ring effect */
+		--radius: 0.4rem; /* Rounded corners for modern appearance */
+		--sidebar-background: #f4f4f4; /* Matches main background */
+		--sidebar-foreground: #2c2c2c; /* Bold dark gray for sidebar text */
+		--sidebar-primary: #707070; /* Strong mid-gray for sidebar highlights */
+		--sidebar-primary-foreground: #ffffff; /* White for sidebar text */
+		--sidebar-accent: #b3b3b3; /* Soft mid-gray for sidebar accents */
+		--sidebar-accent-foreground: #2c2c2c; /* Neutral dark gray for sidebar accents */
+		--sidebar-border: #cccccc; /* Clean vivid light gray for sidebar borders */
+		--sidebar-ring: #707070; /* Bold gray for focused elements */
+	}
+
+	.dark {
+		--background: #1f1f1f; /* Bold deep dark gray background */
+		--foreground: #e8e8e8; /* Crisp vivid light gray for text */
+		--card: #292929; /* Dark vivid gray for cards */
+		--card-foreground: #d0d0d0; /* Bright light gray for card text */
+		--popover: #1f1f1f; /* Matches dark background */
+		--popover-foreground: #e8e8e8; /* Matches text */
+		--primary: #5a5a5a; /* Strong neutral dark gray */
+		--primary-foreground: #ffffff; /* White for contrast */
+		--secondary: #3c3c3c; /* Bold mid-dark gray for secondary elements */
+		--secondary-foreground: #c0c0c0; /* Light vivid gray for secondary text */
+		--muted: #2e2e2e; /* Dark muted gray */
+		--muted-foreground: #8a8a8a; /* Strong muted light gray */
+		--accent: #707070; /* Bold mid-gray for accents */
+		--accent-foreground: #ffffff; /* White for contrast */
+		--destructive: #a14f4f; /* Muted red-gray for destructive actions */
+		--destructive-foreground: #ffffff; /* White for contrast */
+		--border: #3c3c3c; /* Strong vivid border */
+		--input: #333333; /* Muted vivid input backgrounds */
+		--ring: #5a5a5a; /* Bold dark gray ring effect */
+		--radius: 0.4rem;
+		--sidebar-background: #292929; /* Darker vivid gray for sidebar */
+		--sidebar-foreground: #d0d0d0; /* Light vivid gray for sidebar text */
+		--sidebar-primary: #707070; /* Strong mid-gray for sidebar items */
+		--sidebar-primary-foreground: #ffffff; /* Light text for sidebar items */
+		--sidebar-accent: #3c3c3c; /* Bold dark gray for sidebar accents */
+		--sidebar-accent-foreground: #d0d0d0; /* Light vivid gray for sidebar accents */
+		--sidebar-border: #3c3c3c; /* Subtle dark vivid border for sidebar */
+		--sidebar-ring: #707070; /* Bold gray for focused elements */
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+
+	/*  Typography */
+	h1 {
+		@apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+	}
+
+	h2 {
+		@apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;
+	}
+
+	h3 {
+		@apply scroll-m-20 text-2xl font-semibold tracking-tight;
+	}
+
+	h4 {
+		@apply scroll-m-20 text-xl font-semibold tracking-tight;
+	}
+
+	p {
+		@apply leading-7 [&:not(:first-child)]:mt-6;
+	}
+
+	blockquote {
+		@apply mt-6 border-l-2 pl-6 italic;
+	}
+
+	ul {
+		@apply my-6 ml-6 list-disc [&>li]:mt-2;
+	}
+
+	.lead {
+		@apply text-xl text-muted-foreground;
+	}
+
+	.large {
+		@apply text-lg font-semibold;
+	}
+
+	.small {
+		@apply text-sm font-medium leading-none;
+	}
 }

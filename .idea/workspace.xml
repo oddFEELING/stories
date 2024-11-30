@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="099cdcf7-e9f8-445c-bb6a-32b26014cb61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/illustrations/humanities/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/dialogs/create-story-dialog.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/layouts/app-layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/layouts/landing-layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/layouts/theme-provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/navigation/landing-navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/navigation/mobile-bottom-nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/screen-size.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/explore.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/library.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server/database/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server/database/db.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server/database/models/story.schema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server/database/models/user.schema.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server/firebase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/logo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/logo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/welcome/welcome.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2pXUS1zvmox2z3fhkSDmedPYPbl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "code.cleanup.on.save": "true",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "20.17.0",
+    "javascript.nodejs.core.library.typings.version": "20.17.9",
+    "last_opened_file_path": "C:/Users/alawo/Documents/projects/stories_server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\alawo\\Documents\\projects\\stories\\node_modules\\prettier",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "C:\\Users\\alawo\\Documents\\projects\\stories\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alawo\Documents\projects\stories\app\components" />
+      <recent name="C:\Users\alawo\Documents\projects\stories\app" />
+      <recent name="C:\Users\alawo\Documents\projects\stories\app\assets\illustrations\humanities" />
+      <recent name="C:\Users\alawo\Documents\projects\stories\app\assets\fonts\algreya" />
+      <recent name="C:\Users\alawo\Documents\projects\stories\app\assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="099cdcf7-e9f8-445c-bb6a-32b26014cb61" name="Changes" comment="" />
+      <created>1732911910366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732911910366</updated>
+      <workItem from="1732911911880" duration="33618000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/tailwind.config.js" />
+      </list>
+    </option>
+  </component>
+</project>
