@@ -17,6 +17,10 @@ COPY --from=development-dependencies-env /app/node_modules /app/node_modules
 WORKDIR /app
 RUN bun run build
 
+# ~ ======= Set production environment
+ENV NODE_ENV=production
+ENV PORT=3000
+
 FROM dependencies-env
 COPY ./package.json bun.lockb /app/
 COPY --from=production-dependencies-env /app/node_modules /app/node_modules
