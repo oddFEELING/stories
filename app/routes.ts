@@ -12,7 +12,13 @@ export default [
       index("./routes/home.tsx"),
       route("/create", "./routes/create.tsx"),
       route("/explore", "./routes/explore.tsx"),
-      route("/library", "./routes/library.tsx"),
+      layout("./routes/protected/protected.tsx", [
+        route("/library", "./routes/protected/library.tsx"),
+      ]),
+      route("/stories/:story_id", "./routes/stories.story_id.tsx"),
     ]),
+
+    // ~ ======= now reading route  -->
+    route("/now-reading/:story_id", "./routes/now-reading.tsx"),
   ]),
 ] satisfies RouteConfig;

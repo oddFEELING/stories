@@ -20,6 +20,7 @@ export type ThemeProviderProps = {
 export type ThemeProviderState = {
 	theme: Theme;
 	setTheme: (theme: Theme) => void;
+	toggleTheme?: () => void;
 };
 
 // ~ ======= initial theme state  -->
@@ -86,6 +87,15 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
 				window.localStorage.setItem(storageKey, theme);
 			}
 			setTheme(theme);
+		},
+		toggleTheme: () => {
+			// ~ ======= Toggle between light and dark themes -->
+			const newTheme = theme === "light" ? "dark" : "light";
+			// ~ ======= Update localStorage and state -->
+			if (typeof window !== "undefined") {
+				window.localStorage.setItem(storageKey, newTheme);
+			}
+			setTheme(newTheme);
 		},
 	};
 

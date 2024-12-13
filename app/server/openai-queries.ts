@@ -47,6 +47,7 @@ export const getSuggestionsForStoryTitles = async (prompt: string) => {
       },
     ],
   });
+  console.log("Thread created");
 
   // ~ ======= create run
   const run = await openai.beta.threads.runs.createAndPoll(thread.id, {
@@ -54,11 +55,15 @@ export const getSuggestionsForStoryTitles = async (prompt: string) => {
     assistant_id: "asst_xA9iRqfUE9VpBVBFJaQKfGxi",
   });
 
+  console.log("run created");
+
   // ~ ======= get run result
   const messages = await openai.beta.threads.messages.list(thread.id, {
     run_id: run.id,
   });
+
   const message = messages.data.pop();
+  console.log(messages);
 
   // ~ ======= handle text response -->
   if (!message) throw new Error("No message found");

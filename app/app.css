@@ -30,7 +30,6 @@ body {
 		--destructive: #a14f4f; /* Muted red-gray for destructive actions */
 		--destructive-foreground: #ffffff; /* White for contrast */
 		--border: #cccccc; /* Clean light gray border */
-
 		--input: #ededed; /* Light gray for input fields */
 		--ring: #5a5a5a; /* Strong dark gray ring effect */
 		--radius: 0.4rem; /* Rounded corners for modern appearance */
@@ -102,7 +101,7 @@ body {
 		@apply scroll-m-20 text-xl font-semibold tracking-tight;
 	}
 
-	p {
+	.p {
 		@apply leading-7 [&:not(:first-child)]:mt-6;
 	}
 
@@ -110,7 +109,7 @@ body {
 		@apply mt-6 border-l-2 pl-6 italic;
 	}
 
-	ul {
+	.ul {
 		@apply my-6 ml-6 list-disc [&>li]:mt-2;
 	}
 

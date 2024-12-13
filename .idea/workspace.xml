@@ -4,7 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099cdcf7-e9f8-445c-bb6a-32b26014cb61" name="Changes" comment="fix: moved secrets to env" />
+    <list default="true" id="099cdcf7-e9f8-445c-bb6a-32b26014cb61" name="Changes" comment="feat: moved things to server">
+      <change afterPath="$PROJECT_DIR$/_db.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/actions/openai.action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/actions/story.action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/actions/user.action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/draggables/now-reading-draggable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/paper-background-effect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/sheets/now-reading-sheet.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/story-chapter-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/story-character-section.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/story-settings-collapsible.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/story-theme-section.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/collapsible.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/sonner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/use-now-reading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/use-profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/now-reading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/protected/library.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/protected/protected.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/stories.story_id.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server/axios.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/dialogs/create-story-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/dialogs/create-story-dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/app-layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/app-layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/theme-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/theme-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navigation/landing-navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navigation/landing-navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/navigation/mobile-bottom-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/navigation/mobile-bottom-nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ui/scroll-area.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/scroll-area.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ui/sheet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/sheet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/create.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/explore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/explore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/library.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/server/database/db.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/server/database/db.types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/server/database/models/story.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/server/database/models/user.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/server/database/models/user.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/server/openai-queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/server/openai-queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types.d.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,31 +63,28 @@
       </list>
     </option>
   </component>
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "oddFEELING"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;oddFEELING&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/oddFEELING/stories.git",
-    "accountId": "a7f59f9f-27cf-412f-a67e-ff4c6ab585c0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/oddFEELING/stories.git&quot;,
+    &quot;accountId&quot;: &quot;a7f59f9f-27cf-412f-a67e-ff4c6ab585c0&quot;
   }
-}]]></component>
+}</component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2pXUS1zvmox2z3fhkSDmedPYPbl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,35 +93,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "20.17.0",
-    "javascript.nodejs.core.library.typings.version": "20.17.9",
-    "last_opened_file_path": "C:/Users/alawo/Documents/projects/stories_server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\alawo\\Documents\\projects\\stories\\node_modules\\prettier",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "C:\\Users\\alawo\\Documents\\projects\\stories\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.9&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alawo/Documents/projects/stories/app/server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\alawo\\Documents\\projects\\stories\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\alawo\\Documents\\projects\\stories\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alawo\Documents\projects\stories\app\server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alawo\Documents\projects\stories\app\routes\protected" />
+      <recent name="C:\Users\alawo\Documents\projects\stories" />
+      <recent name="C:\Users\alawo\Documents\projects\stories\app\actions" />
       <recent name="C:\Users\alawo\Documents\projects\stories\app\components" />
       <recent name="C:\Users\alawo\Documents\projects\stories\app" />
-      <recent name="C:\Users\alawo\Documents\projects\stories\app\assets\illustrations\humanities" />
-      <recent name="C:\Users\alawo\Documents\projects\stories\app\assets\fonts\algreya" />
-      <recent name="C:\Users\alawo\Documents\projects\stories\app\assets" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -124,7 +168,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732911910366</updated>
-      <workItem from="1732911911880" duration="33942000" />
+      <workItem from="1732911911880" duration="136068000" />
+      <workItem from="1733327905310" duration="660000" />
+      <workItem from="1733469697817" duration="950000" />
+      <workItem from="1734078103589" duration="7492000" />
     </task>
     <task id="LOCAL-00001" summary="fix: moved secrets to env">
       <option name="closed" value="true" />
@@ -142,19 +189,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732985711553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: moved secrets to env">
+      <option name="closed" value="true" />
+      <created>1732985759434</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732985759434</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: moved secrets to env">
+      <option name="closed" value="true" />
+      <created>1732985856874</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732985856874</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/tailwind.config.js" />
-      </list>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: moved secrets to env" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: moved secrets to env" />
+    <MESSAGE value="feat: moved things to server" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: moved things to server" />
   </component>
 </project>

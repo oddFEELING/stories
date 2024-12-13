@@ -1,13 +1,21 @@
 "use client";
 import React from "react";
 import { Button } from "~/components/ui/button";
-import { Check, Compass, Laptop, Menu, Moon, Sun } from "lucide-react";
+import {
+  Check,
+  DatabaseZap,
+  Laptop,
+  Menu,
+  Moon,
+  PlayCircle,
+  Sun,
+  User,
+} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuPortal,
   DropdownMenuSeparator,
   DropdownMenuShortcut,
@@ -20,6 +28,13 @@ import { cn } from "~/lib/utils";
 import { useTheme } from "~/components/layouts/theme-provider";
 import { NavLink, useLocation } from "react-router";
 import { motion } from "framer-motion";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
+import useNowReading from "~/hooks/use-now-reading";
 
 type ComponentProps = {
   scrollValue: number;
@@ -27,6 +42,7 @@ type ComponentProps = {
 
 const LandingNavBar: React.FC<ComponentProps> = ({ scrollValue }) => {
   const { theme, setTheme } = useTheme();
+  const { setShowNowReading } = useNowReading();
   const location = useLocation();
   // ~ =============================================>
   // ~ ======= Navigation menu items with proper handlers
@@ -95,21 +111,29 @@ const LandingNavBar: React.FC<ComponentProps> = ({ scrollValue }) => {
 
       {/* Navigation Controls */}
       <div className="flex items-center gap-4">
-        <NavLink to="/explore">
-          {" "}
-          <Button onClick={handleReadingClick}>
-            <Compass size={18} strokeWidth={1.2} />
-            Explore
-          </Button>
-        </NavLink>
+        {/* ~ ####### now playing control  ####### */}
+        <Button size="sm" onClick={() => setShowNowReading(true)}>
+          <PlayCircle size={18} strokeWidth={1.2} />
+          Now Reading
+        </Button>
+
+        <Button variant="outline" size="sm" className="hidden sm:flex">
+          <DatabaseZap size={18} strokeWidth={1.2} />
+          <span>300</span>
+        </Button>
+
+        {/* ~ ####### Menu ####### */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button size="icon" variant="outline">
+            <Button size="icon" variant="outline" className="hidden sm:flex">
               <Menu className="h-5 w-5" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
-            <DropdownMenuLabel>App Menu</DropdownMenuLabel>
+            {/*<DropdownMenuLabel>App Menu</DropdownMenuLabel>*/}
+            <DropdownMenuItem>
+              <SignedOut></SignedOut>
+            </DropdownMenuItem>
             <DropdownMenuSeparator />
 
             {/* Reading Group */}
@@ -177,6 +201,17 @@ const LandingNavBar: React.FC<ComponentProps> = ({ scrollValue }) => {
             </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
+
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        <SignedOut>
+          <SignInButton mode="modal">
+            <Button variant="outline" size="icon">
+              <User size={18} strokeWidth={1.2} />
+            </Button>
+          </SignInButton>
+        </SignedOut>
       </div>
     </div>
   );
@@ -188,4 +223,5 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/create", label: "Create" },
   { to: "/library", label: "My Library" },
+  { to: "/explore", label: "Explore" },
 ];
