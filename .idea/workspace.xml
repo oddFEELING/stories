@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099cdcf7-e9f8-445c-bb6a-32b26014cb61" name="Changes" comment="Exposed ports for container">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.bun" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.bun" afterDir="false" />
-    </list>
+    <list default="true" id="099cdcf7-e9f8-445c-bb6a-32b26014cb61" name="Changes" comment="fixed the docker file maybe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +125,7 @@
       <workItem from="1732911911880" duration="136068000" />
       <workItem from="1733327905310" duration="660000" />
       <workItem from="1733469697817" duration="950000" />
-      <workItem from="1734078103589" duration="9701000" />
+      <workItem from="1734078103589" duration="10325000" />
     </task>
     <task id="LOCAL-00001" summary="fix: moved secrets to env">
       <option name="closed" value="true" />
@@ -179,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734122957287</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed the docker file maybe">
+      <option name="closed" value="true" />
+      <created>1734124000023</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734124000023</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +194,7 @@
     <MESSAGE value="feat: moved things to server" />
     <MESSAGE value="feat: nothing" />
     <MESSAGE value="Exposed ports for container" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exposed ports for container" />
+    <MESSAGE value="fixed the docker file maybe" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the docker file maybe" />
   </component>
 </project>
