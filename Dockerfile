@@ -16,4 +16,6 @@ COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/bun.lockb ./bun.lockb
 RUN bun install --production
 ENV NODE_ENV=production
+ENV PORT=3000
+EXPOSE ${PORT}
 CMD ["bun", "run", "start"]
