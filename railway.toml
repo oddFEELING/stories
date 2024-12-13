@@ -1,0 +1,7 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "bun install"
+
+[deploy]
+startCommand = "bun run start"
+healthcheckTimeout = 300
